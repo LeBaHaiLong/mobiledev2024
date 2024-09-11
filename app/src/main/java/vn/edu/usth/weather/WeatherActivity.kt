@@ -13,7 +13,8 @@ public class WeatherActivity extends AppCompatActivity {
 
         ForecastFragment firstFragment = new ForecastFragment();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.toolbar, firstFragment)
+                .commit();
     }
     private static final String TAG = "WeatherActivity";
 
