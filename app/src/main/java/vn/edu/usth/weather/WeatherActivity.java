@@ -23,10 +23,6 @@ public class WeatherActivity extends AppCompatActivity {
         ForecastFragment forecastFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.main,forecastFragment).commit();
         getSupportFragmentManager().beginTransaction().add(R.id.main, weatherFragment).commit();
-//        WeatherFragment weatherFragment = new WeatherFragment();
-//        ForecastFragment forecastFragment = new ForecastFragment();
-//        getSupportFragmentManager().beginTransaction().add(R.id.main,forecastFragment).commit();
-//        getSupportFragmentManager().beginTransaction().add(R.id.main, weatherFragment).commit();
         WeatherAndForecastFragment adapter = new WeatherAndForecastFragment(getSupportFragmentManager());
 
         ViewPager pager=(ViewPager)findViewById(R.id.ViewPager);
