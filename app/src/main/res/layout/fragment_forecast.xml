@@ -18,7 +18,6 @@
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:padding="10dp">
-
         <!-- Monday -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +39,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"
@@ -84,7 +82,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"
@@ -128,7 +125,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"

@@ -20,6 +20,7 @@ public class WeatherActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.main, weatherFragment).commit();
     }
 
+
     @Override
     protected void onStart() {
         super.onStart();

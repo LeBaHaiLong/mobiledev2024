@@ -27,6 +27,7 @@ public class ForecastFragment extends Fragment {
     public ForecastFragment() {
         // Required empty public constructor
     }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -53,12 +54,6 @@ public class ForecastFragment extends Fragment {
         }
     }
 
-    //    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-//        view.setBackgroundColor(0x20FF0000);
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -66,34 +61,6 @@ public class ForecastFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
         view.setBackgroundColor(0x20FF0000);
 
-//        LinearLayout layout = new LinearLayout(getActivity());
-//        layout.setOrientation(LinearLayout.VERTICAL);
-//        layout.setPadding(20, 20, 20, 20);
-//
-//        // Day
-
-        // Day
-//        TextView dayTextView = new TextView(getActivity());
-//        dayTextView.setText("Thursday");
-//        dayTextView.setTextSize(40);
-//        dayTextView.setGravity(Gravity.CENTER_HORIZONTAL);
-//        dayTextView.setPadding(20, 0, 0, 15);
-//
-//        // Weather icon
-//        dayTextView.setPadding(0, 0, 0, 15);
-
-        // Weather icon
-//        ImageView Icon = new ImageView(getActivity());
-//        Icon.setImageResource(R.drawable.cloudy); // Icon
-//        Icon.setImageResource(R.drawable.cloudy_7803745); // Icon
-//
-//        layout.addView(dayTextView);
-//        layout.addView(Icon);
-
-//        return layout;
-
-//    }
-//
         return inflater.inflate(R.layout.fragment_forecast, container, false);
     }
 }
