@@ -168,7 +168,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"
@@ -212,7 +211,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"
@@ -256,7 +254,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"
@@ -300,7 +297,6 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/img" />
-            android:src="@drawable/sun" />
 
             <LinearLayout
                 android:layout_width="200dp"

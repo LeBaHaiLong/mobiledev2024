@@ -1,42 +1,45 @@
 package vn.edu.usth.weather;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 
-public class WeatherAndForecastFragment extends FragmentPagerAdapter {
-    private final int PAGE_COUNT = 3;
-    private String[] titles = new String[]{"Hanoi", "Paris", "Toulouse"};
+public class WeatherAndForecastFragment extends Fragment {
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
-    public WeatherAndForecastFragment(FragmentManager fm) {
-        super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+    public WeatherAndForecastFragment() {
+
     }
 
-    @Override
-    public int getCount() {
-        return PAGE_COUNT; // number of pages for a ViewPager
+    public static WeatherAndForecastFragment newInstance(String param1, String param2) {
+        WeatherAndForecastFragment fragment = new WeatherAndForecastFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
     }
-
     @Override
-    public Fragment getItem(int page) {
-        // returns an instance of Fragment corresponding to the specified page
-        switch (page) {
-            case 0:
-                return WeatherFragment.newInstance(titles[0]);
-            case 1:
-                return WeatherFragment.newInstance(titles[1]);
-            case 2:
-                return WeatherFragment.newInstance(titles[2]);
-            default:
-                return null; // safe
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
     @Override
-    public CharSequence getPageTitle(int page) {
-        // returns a tab title corresponding to the specified page
-        return titles[page];
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_weather_and_forecast, container, false);
     }
 }
